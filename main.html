@@ -83,5 +83,17 @@
 </audio>
 </h1>
 <script src="https://raw.githubusercontent.com/samsonkiranhappy/demo-001/Samson-kiran/script.js"></script>
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
 </body>
 </html>
